@@ -1,5 +1,5 @@
 const {Model, DataTypes}= require('sequelize');
-const { USE } = require('sequelize/types/index-hints');
+// const { USE } = require('sequelize/types/index-hints');
 const sequelize = require('../config/connection');
 
 class User extends Model {
