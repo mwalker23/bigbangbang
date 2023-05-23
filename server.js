@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 //to access the public folder = front-end
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('/public'));
 
 // to use handlebars
 const hbs = exphbs.create({});
