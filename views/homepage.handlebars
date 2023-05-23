@@ -29,4 +29,17 @@
     </form>
 </main>
 
+<section class="containter row">
+    <ul>
+        {{#each prettyUserData as |data|}}
+        <li class="col3">
+            <a href="/dashboard/{{data.id}}">
+            {{data.username}}
+            </a>
+            
+            </li>
+         {{/each}}
+    </ul>
+</section>
+
 <script src="./js/index.js"></script>
