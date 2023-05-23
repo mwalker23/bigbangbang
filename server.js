@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const controllers = require('./controllers');
 const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
@@ -7,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 //to access the public folder = front-end
-app.use(express.static('/public'));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // to use handlebars
 const hbs = exphbs.create({});
